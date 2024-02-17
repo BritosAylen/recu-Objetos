@@ -46,7 +46,7 @@ class Terreno {
 	} else 0
 	
   method agregarPlanta(planta) {
-  	if(self.conjuntoDeCultivos().size() < capacidadDePlantas &&( plantasQuePuedenCrecer.any({ tipoPlanta => tipoPlanta == planta }))IIself.esRico()&&planta==palmera) {
+  	if(self.conjuntoDeCultivos().size() < capacidadDePlantas &&( plantasQuePuedenCrecer.any({ tipoPlanta => tipoPlanta == planta }))self.esRico()&&planta==palmera) {
     	self.conjuntoDeCultivos().add(planta)
   	} else {
     	throw new UserException(message = "No se pueden agregar más plantas")
@@ -100,3 +100,4 @@ object palmeraTropical {
   method precio(esRico) = if (esRico) * 5 else 0
   method valorNutricional() = (2 * edad).max(7500)
 }
+

@@ -92,3 +92,4 @@ object palmera {
   method precio(esRico) = if (esRico) * 5 else 0
   method valorNutricional() = (2 * edad).max(7500)
 }
+

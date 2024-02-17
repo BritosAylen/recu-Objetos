@@ -1,4 +1,12 @@
-/** First Wollok example */
-object wollok {
-	method howAreYou() = 'I am Wolloktastic!'
+class Granja {
+	
+}
+
+
+class CamposAbiertos inherits Granja {
+	
+}
+
+class CamposInnovadores inherits Granja {
+	
 }

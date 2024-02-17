@@ -47,7 +47,7 @@ class CamposAbiertos inherits Terreno {
 class Invernaderos inherits Terreno {
 	const capacidadMaximaDePlantas
 	
-	 method esRico() = self.conjuntoDeCultivos().length < (capacidadMaximaDePlantas / 2) 
+	 method esRico() = self.conjuntoDeCultivos().size() < (capacidadMaximaDePlantas / 2) 
 	 || dispositivoElectronico == reguladorNutricional
 	 || (dispositivoElectronico == humificador && 20 < dispositivoElectronico.porcentajeDeHumedad() < 40)
 	 

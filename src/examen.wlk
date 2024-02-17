@@ -88,7 +88,7 @@ object arbolFrutal {
 	method valorNutricional() = 4000.min(edad * 3)
 }
 
-object palmera {
+object palmeraTropical {
   method precio(esRico) = if (esRico) * 5 else 0
   method valorNutricional() = (2 * edad).max(7500)
 }

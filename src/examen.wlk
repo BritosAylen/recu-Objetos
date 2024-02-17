@@ -1,13 +1,16 @@
 object reguladorNutricional {
-	method costoDeMantenimiento() 
+	method costoDeMantenimiento() =  2000
 }
 
 object humificador {	
-	method costoDeMantenimiento() 
+	var humedad
+	
+	method costoDeMantenimiento(humedat) = if (humedad <= 0.3) 1000 else 4500
+	
 }
 
 object panelesSolares {
-	method costoDeMantenimiento() 
+	method costoDeMantenimiento() = 25000
 }
 
 class Terreno {

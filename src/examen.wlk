@@ -4,7 +4,7 @@ object reguladorNutricional {
 }
 
 object humificador {
-  var humedad
+  var property humedad
 
   method costoDeMantenimiento() = if (self.humedad<= 0.3) 1000 else 4500
 }
